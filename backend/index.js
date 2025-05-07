@@ -6,7 +6,12 @@ import { Server } from "socket.io";
 // creating instances
 const app = express();
 const server = createServer(app);
-const io = new Server(server);
+const io = new Server(server, {
+    cors: {
+        origin: "",
+        method: ["GET", "POST"],
+    },
+}); 
 
 io.on("connection", (socket) => {
     console.log("new client connected");

@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import ChatApp from "./components/ChatApp";
 
 const App = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+    return (
+        <div>
+            <ChatApp></ChatApp>
+        </div>
+    );
+};
 
-export default App
+export default App;
